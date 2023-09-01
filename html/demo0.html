@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+
+    <style>
+        .aaaaaaaaaaaaaaa {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(117, 113, 113);
+            color: white;
+        }
+
+        #main .aaaaaaaaaaaaaaa{
+            flex: 1;
+            width: 60%;
+        }
+
+        .aaaaaaaaaaaaaaa #typing {
+            flex: 1;
+            width: 60%;
+            height: 20vh;
+            border: red;
+            font-size: xx-large;
+        }
+
+
+
+        #commend .aaaaaaaaaaaaaaa{
+            flex: 1;
+            width: 80%;
+        }
+
+        #btn .aaaaaaaaaaaaaaa{
+            background-color: red;
+        }
+
+        p .aaaaaaaaaaaaaaa{
+            background-color: black;
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="main" class="aaaaaaaaaaaaaaa">
+        <h1>评论区</h1><hr>
+        <textarea id="typing">输入文字</textarea>
+        <button id="btn">发送评论</button>
+        <div id="commend"></div>
+    </div>
+</body>
+
+<script>
+    // 读取之前存储的评论并显示
+    function loadComments() {
+        var comments = JSON.parse(localStorage.getItem("comments")) || [];
+        var commendDiv = document.getElementById("commend");
+        commendDiv.innerHTML = "";
+        for (var i = 0; i < comments.length; i++) {
+            var p = document.createElement("p");
+            p.innerHTML = "用户：" + comments[i].text + '<hr>' + comments[i].date;
+            commendDiv.appendChild(p);
+        }
+    }
+
+    // 保存评论到本地存储
+    function saveComment(comment) {
+        var comments = JSON.parse(localStorage.getItem("comments")) || [];
+        comments.unshift(comment);
+        localStorage.setItem("comments", JSON.stringify(comments));
+        loadComments(); // 更新评论显示
+    }
+
+    document.getElementById("btn").onclick = function () { send(); };
+
+    function send() {
+        var g = new Date();
+        var value = document.getElementById("typing").value;
+        var comment = {
+            text: value,
+            date: g.toUTCString()
+        };
+        saveComment(comment);
+    }
+
+    // 页面加载时加载已有评论
+    window.onload = function () {
+        loadComments();
+    };
+</script>
+</html>

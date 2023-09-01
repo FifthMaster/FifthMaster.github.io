@@ -1,0 +1,93 @@
+
+/* 禁用文本选择 */
+body {
+  -webkit-user-select: none; /* Chrome, Safari, Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* 兼容其他浏览器 */
+}
+
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 6px;
+}
+
+.fengxiang{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+    font-weight: 900;
+
+
+}
+.fengxiangdds{
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.dada{
+    color: #d28460;
+    text-align: center;
+}
+
+.dadadds{
+    color: #ff0000;
+    text-align: center;
+}
+
+
+.centerh2{
+    text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.conter001{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.clash001{
+    color: red;
+
+}
+
+.left-align{
+    text-align: left;
+}
+
+.weight01{
+    text-align: center;
+    font-size: 293px;
+    color: #c2e0ab;
+}
+
+a{
+    text-decoration: none;
+}
+
+.classread{
+    color: #0045ff;
+
+}
+.dian{
+    color: #ff0000;
+}
