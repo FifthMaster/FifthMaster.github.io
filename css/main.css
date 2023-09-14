@@ -1,0 +1,40 @@
+.blog-box {
+    border: 2px solid #ddd; /* 框框边框样式 */
+    padding: 10px; /* 内边距 */
+    margin-bottom: 20px; /* 底部外边距 */
+    width: 1450px;
+    height: 92px;
+}
+
+.blog-box2 {
+    border: 2px solid #ddd; /* 框框边框样式 */
+    padding: 10px; /* 内边距 */
+    margin-bottom: 20px; /* 底部外边距 */
+    width: 1450px;
+    height: 94px;
+}
+.blog-sx {
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 1450px;
+    height: 113px;
+}
+
+.size-text {
+    margin-top: -13px;
+}
+
+.weizi-size {
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    text-decoration: underline;
+    padding: 2px; /* 设置边框与文本之间的间距 */
+}
