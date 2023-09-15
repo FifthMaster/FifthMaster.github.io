@@ -1,0 +1,52 @@
+.google {
+    width: 1450px;
+    height: 92px;
+}
+
+#google {
+margin-top: 24px;
+    margin-left: 94em;
+    position: absolute;
+    top: -9px;
+    text-decoration: none;
+}
+
+#baidu {
+margin-top: 24px;
+    margin-left: 100em;
+    position: absolute;
+    top: -9px;
+    text-decoration: none;
+}
+
+#yandex {
+margin-top: 24px;
+    margin-left: 106em;
+    position: absolute;
+    top: -9px;
+    text-decoration: none;
+}
+
+#nona {
+margin-top: 24px;
+    margin-left: 108em;
+    position: absolute;
+    top: -9px;
+    text-decoration: none;
+}
+
+#bing {
+margin-top: 24px;
+    margin-left: 110em;
+    position: absolute;
+    top: -9px;
+    text-decoration: none;
+}
+
+#yahoo {
+margin-top: 24px;
+    margin-left: 112em;
+    position: absolute;
+    top: -9px;
+    text-decoration: none;
+}
